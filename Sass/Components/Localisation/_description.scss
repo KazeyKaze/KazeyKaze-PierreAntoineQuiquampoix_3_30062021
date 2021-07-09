@@ -1,0 +1,33 @@
+.description{
+    display: flex;
+    flex-direction: column;
+    background: $gris-clair;
+    text-align: center;
+    align-items: center;
+    margin: 0 -1rem;
+    padding: 3rem 2.5rem 3.5rem 2.5rem;
+
+        & h1{
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        & p{
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            
+        }
+
+        & button{
+            font-size: 1rem;
+            font-weight: bold;
+            color: $gris-clair;
+            padding: 1rem;
+            border-radius: 30px;
+            border-color: $rose;
+            border-style: solid;
+            background: $rose;
+            box-shadow: rgba(0, 0, 0, 0.350) 0px 10px 20px -5px;
+        }
+}

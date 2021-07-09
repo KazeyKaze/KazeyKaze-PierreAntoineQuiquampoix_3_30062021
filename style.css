@@ -79,9 +79,88 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background: linear-gradient(#c1c1c1c9, #eeecec 5px);
+  padding: 1rem 0 1rem 0;
+  margin: 0 -1rem;
 }
 
 .localisation__icon {
-  margin: 0 1rem 0 2rem;
+  margin: 0 1rem 0 3rem;
+}
+
+.localisation input {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background: #eeecec;
+}
+
+.localisation input:focus {
+  outline: none;
+}
+
+.localisation input::-webkit-input-placeholder {
+  color: black;
+  font-size: 1rem;
+}
+
+.localisation input:-ms-input-placeholder {
+  color: black;
+  font-size: 1rem;
+}
+
+.localisation input::-ms-input-placeholder {
+  color: black;
+  font-size: 1rem;
+}
+
+.localisation input::placeholder {
+  color: black;
+  font-size: 1rem;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: whitesmoke;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -1rem;
+  padding: 3rem 2.5rem 3.5rem 2.5rem;
+}
+
+.description h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description p {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.description button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 1rem;
+  border-radius: 30px;
+  border-color: #FF79DA;
+  border-style: solid;
+  background: #FF79DA;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px -5px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px -5px;
 }
 /*# sourceMappingURL=style.css.map */
