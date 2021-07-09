@@ -51,4 +51,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+body {
+  margin: 1.5rem 1rem 0 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo__image {
+  width: 50%;
+  height: 50%;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.localisation__icon {
+  margin: 0 1rem 0 2rem;
+}
 /*# sourceMappingURL=style.css.map */
