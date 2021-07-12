@@ -1,0 +1,72 @@
+.fonctionnement{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0 3rem 0;
+    justify-content: center;
+
+        & h1{
+            width: 100%;
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        & h2{
+            display: flex;
+            font-weight: bold;
+        }
+
+        & p{
+            display: flex;
+            font-size: 0.9rem;
+            color: white;
+            margin-right: 0.5rem;
+            border: solid;
+            transform: translate(-60%);
+            border-radius: 100% 100% 100% 100%;
+            padding: 0.12rem 0.3rem 0.1rem 0.3rem;
+            border-color: $magenta;
+            background: $magenta;
+        }
+
+        & i{
+            font-size: 1.25rem;
+        }
+
+        &__etiquette{
+            display: flex;
+            width: 90%;
+            height: 4.5rem;
+            margin-bottom: 1.5rem;
+            align-items: center;
+            border: solid $gris-clair;
+            border-radius: 25px;
+            background: $gris-clair;
+            box-shadow: rgba(0, 0, 0, 0.150) 5px 10px 10px -5px;
+
+                &:hover{
+                    background: rgb(240, 240, 248);
+                    border-color: rgb(240, 240, 248);
+                    box-shadow: rgba(0, 0, 0, 0.350) 0px 10px 10px -3px;
+                    
+                        i{
+                            color: $magenta;
+                        }
+                }
+
+            & .fa-mobile-alt{
+                margin-right: 2.25rem;
+                color: $gris-fonce;
+            }
+
+            & .fa-list-ul{
+                margin-right: 1.80rem;
+                color: $gris-fonce;
+            }
+
+            & .fa-store{
+                margin-right: 1.60rem;
+                color: $gris-fonce;
+            }
+        }
+}
