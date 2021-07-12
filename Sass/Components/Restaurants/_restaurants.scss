@@ -1,0 +1,45 @@
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    background: $gris-clair;
+    margin: 0rem -1.5rem 0rem -1.5rem;
+    padding: 4rem 0 3rem 0;
+        
+        & h1{
+            width: 80%;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 2rem 1.5rem;
+        }
+
+        &__div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                
+                & img{
+                 width: 87.5%;
+                }
+
+                &__banniere{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    background: blue;
+                    padding: 1.5rem 0 1.5rem 0;
+                    width: 87.5%;
+
+                        &__texte{
+                            margin-left: 1rem;
+                            line-height: 1.5rem;
+                        }
+
+                        &__icone{
+                            transform: translate(0, 25%);
+                            margin-right: 1rem;
+                        }
+                }
+        }
+}
