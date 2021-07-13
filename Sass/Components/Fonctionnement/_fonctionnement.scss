@@ -1,7 +1,7 @@
 .fonctionnement{
     display: flex;
     flex-wrap: wrap;
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0 2rem 0;
     justify-content: center;
 
         & h1{
@@ -42,12 +42,12 @@
             border: solid $gris-clair;
             border-radius: 25px;
             background: $gris-clair;
-            box-shadow: rgba(0, 0, 0, 0.150) 5px 10px 10px -5px;
+            box-shadow: $ombre;
 
                 &:hover{
                     background: rgb(240, 240, 248);
                     border-color: rgb(240, 240, 248);
-                    box-shadow: rgba(0, 0, 0, 0.350) 0px 10px 10px -3px;
+                    box-shadow: $ombre-survol;
                     
                         i{
                             color: $magenta;

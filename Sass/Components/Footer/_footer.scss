@@ -1,0 +1,32 @@
+footer{
+    margin: 0 -1.5rem 0 -1.5rem;
+    padding: 1.5rem 0 2rem 1.5rem;
+    background: $gris-footer;
+    line-height: 1.5;
+
+        & p{
+            font-family : "Shrikhand", cursif ;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        & a:hover{
+            text-decoration: underline white;
+        }
+
+        & nav{
+            margin-top: 0.5rem;
+        }
+
+        & h3{
+            color: white;
+
+            & i{
+                margin-right: 1rem;
+            }
+
+            .fa-hands-helping{
+                font-size: 0.6rem;
+            }
+        }
+}

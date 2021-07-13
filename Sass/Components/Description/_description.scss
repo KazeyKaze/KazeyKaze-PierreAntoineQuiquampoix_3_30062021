@@ -8,7 +8,7 @@
     padding: 3rem 2.5rem 3.5rem 2.5rem;
 
         & h1{
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 1rem;
         }
@@ -20,7 +20,7 @@
         }
 
         & button{
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: bold;
             color: $gris-clair;
             padding: 1rem;
@@ -28,12 +28,12 @@
             border-color: $rose $rose $magenta $rose;
             border-style: solid;
             background: linear-gradient($rose, $magenta 90%);
-            box-shadow: rgba(0, 0, 0, 0.350) 0px 10px 20px -5px;
+            box-shadow: $ombre;
 
                 &:hover{
-                    box-shadow: rgba(0, 0, 0, 0.350) 0px 10px 10px -3px;
-                    background: lighten($color: $magenta, $amount: 5%);
-                    border-color: lighten($color: $magenta, $amount: 5%);
+                    box-shadow: $ombre-survol;
+                    background: lighten($color: $magenta, $amount: 10%);
+                    border-color: lighten($color: $magenta, $amount: 10%);
                 }
         }
 }
