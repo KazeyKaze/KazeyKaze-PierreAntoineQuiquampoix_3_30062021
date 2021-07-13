@@ -73,12 +73,9 @@ body a, body a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 2rem;
   margin-bottom: 1rem;
-}
-
-.logo__image {
-  width: 50%;
-  height: 50%;
+  font-family: "Shrikhand", cursif;
 }
 
 .localisation {
