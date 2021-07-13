@@ -170,13 +170,13 @@ body a, body a:visited {
   border-style: solid;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(90%, #9356DC));
   background: linear-gradient(#FF79DA, #9356DC 90%);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px -5px;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px -5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
 }
 
 .description button:hover {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px -3px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px -3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 10px -5px;
   background: #ae80e5;
   border-color: #ae80e5;
 }
@@ -240,15 +240,15 @@ body a, body a:visited {
   border: solid whitesmoke;
   border-radius: 25px;
   background: whitesmoke;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px -5px;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px -5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
 }
 
 .fonctionnement__etiquette:hover {
-  background: #f0f0f8;
-  border-color: #f0f0f8;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px -3px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px -3px;
+  background: #ebebf5;
+  border-color: #ebebf5;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 10px -5px;
 }
 
 .fonctionnement__etiquette:hover i {
@@ -304,6 +304,19 @@ body a, body a:visited {
           align-items: center;
 }
 
+.restaurants__div__nouveau {
+  color: #248a70;
+  background-color: #99E2D0;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 0;
+  right: 12px;
+  top: 13px;
+}
+
 .restaurants__div a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,13 +331,9 @@ body a, body a:visited {
   margin-bottom: 1rem;
   width: 87.5%;
   border-radius: 15px 15px 15px 15px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px -5px;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px -5px;
-}
-
-.restaurants__div a:hover {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px -3px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px -3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
+  position: relative;
 }
 
 .restaurants__div img {

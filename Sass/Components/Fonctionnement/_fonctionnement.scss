@@ -45,8 +45,8 @@
             box-shadow: $ombre;
 
                 &:hover{
-                    background: rgb(240, 240, 248);
-                    border-color: rgb(240, 240, 248);
+                    background: $bleu-clair;
+                    border-color: $bleu-clair;
                     box-shadow: $ombre-survol;
                     
                         i{

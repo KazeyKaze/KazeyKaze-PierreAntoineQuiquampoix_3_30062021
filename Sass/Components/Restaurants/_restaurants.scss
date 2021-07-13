@@ -18,6 +18,19 @@
             flex-direction: column;
             align-items: center;
 
+                &__nouveau{
+                    color: $vert-fonce;
+                    background-color: $vert;
+                    padding: 0.5rem 0.8rem;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    border-radius: 3px;
+                    position: absolute;
+                    z-index: 0;
+                    right: 12px;
+                    top: 13px;
+                }
+
                 & a{
                     display: flex;
                     flex-direction: column;
@@ -26,10 +39,7 @@
                     width: 87.5%;
                     border-radius: 15px 15px 15px 15px;
                     box-shadow: $ombre;
-
-                        &:hover{
-                            box-shadow: $ombre-survol;
-                        }
+                    position: relative;
                 }
                 
                 & img{
