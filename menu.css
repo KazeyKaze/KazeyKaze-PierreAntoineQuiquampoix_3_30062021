@@ -75,18 +75,97 @@ body a, body a:visited {
           justify-content: center;
   position: relative;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   font-family: "Shrikhand", cursif;
 }
 
 .logo a {
   position: absolute;
   left: 0px;
-  top: -5px;
+  top: -4px;
 }
 
 .logo a i {
   font-size: 1.3rem;
+}
+
+.image-menu {
+  margin: 0 -1.5rem;
+}
+
+.image-menu img {
+  width: 100%;
+}
+
+.menu {
+  background: whitesmoke;
+  margin: 0 -1.5rem -3rem;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  top: -3rem;
+}
+
+.menu__titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0 1.2rem 0rem;
+  padding: 2rem 0 2rem 0;
+  font-family: "Shrikhand", cursif;
+  font-size: 1.7rem;
+}
+
+.menu__titre i {
+  position: absolute;
+  right: 20px;
+  top: 28px;
+}
+
+.menu__entrees {
+  text-transform: uppercase;
+  margin: 0 1.2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
+}
+
+.menu__entrees__ligne {
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+  padding: 0rem 0 0.5rem;
+}
+
+.menu__entrees__choix {
+  text-transform: none;
+  background: white;
+  padding: 0.3rem 0.5rem 0.8rem;
+  border-radius: 15px;
+  margin: 1rem -0.3rem 0rem;
+}
+
+.menu__entrees__choix h3 {
+  line-height: 2;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.menu__entrees__choix__prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__entrees__choix__prix h4 {
+  font-size: 0.9rem;
+}
+
+.menu__entrees__choix__prix p {
+  margin: 0 1rem 0 0;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .bouton {
@@ -96,7 +175,9 @@ body a, body a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 3rem 0 4rem 0;
+  padding: 3rem 0 4rem 0;
+  margin: 0 -1.5rem 0 -1.5rem;
+  background: whitesmoke;
 }
 
 .bouton button {
