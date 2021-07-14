@@ -66,6 +66,10 @@ body a, body a:visited {
   color: initial;
 }
 
+.body-menu {
+  background: whitesmoke;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,15 +78,18 @@ body a, body a:visited {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  font-size: 2rem;
+  font-size: 1.9rem;
   margin-bottom: 0.7rem;
   font-family: "Shrikhand", cursif;
+  background-color: white;
+  margin: -1.5rem -1.5rem 0 -1.5rem;
+  padding: 1.4rem 1.5rem 0.8rem;
 }
 
 .logo a {
   position: absolute;
-  left: 0px;
-  top: -4px;
+  left: 22px;
+  top: 21px;
 }
 
 .logo a i {
@@ -95,11 +102,12 @@ body a, body a:visited {
 
 .image-menu img {
   width: 100%;
+  position: relative;
 }
 
 .menu {
   background: whitesmoke;
-  margin: 0 -1.5rem -3rem;
+  margin: 0 -1.5rem 0rem;
   border-radius: 40px 40px 0px 0px;
   position: relative;
   top: -3rem;
@@ -109,9 +117,8 @@ body a, body a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   margin: 0 1.2rem 0rem;
-  padding: 2rem 0 2rem 0;
+  padding: 2rem 0 0rem 0;
   font-family: "Shrikhand", cursif;
   font-size: 1.7rem;
 }
@@ -124,9 +131,13 @@ body a, body a:visited {
 
 .menu__entrees {
   text-transform: uppercase;
-  margin: 0 1.2rem;
+  margin: 0rem 1.2rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
+}
+
+.menu__entrees h2 {
+  margin: 2.5rem 0 0 0;
 }
 
 .menu__entrees__ligne {
@@ -175,7 +186,7 @@ body a, body a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3rem 0 4rem 0;
+  padding: 0 0 4rem 0;
   margin: 0 -1.5rem 0 -1.5rem;
   background: whitesmoke;
 }

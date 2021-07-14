@@ -3,21 +3,22 @@
         
         & img{
         width: 100%;
+        position: relative;
         }
 }
 
 .menu{
     background: $gris-clair;
-    margin: 0 -1.5rem -3rem;
+    margin: 0 -1.5rem 0rem;
     border-radius: 40px 40px 0px 0px;
     position: relative;
     top: -3rem;
     
+    
         &__titre{
             display: flex;
-            position: relative;
             margin: 0 1.2rem 0rem;
-            padding: 2rem 0 2rem 0;
+            padding: 2rem 0 0rem 0;
             font-family : "Shrikhand", cursif ;
             font-size: 1.7rem;
 
@@ -30,8 +31,12 @@
 
         &__entrees{
             text-transform: uppercase;
-            margin: 0 1.2rem;
+            margin: 0rem 1.2rem;
             box-shadow: $ombre;
+
+                & h2{
+                    margin: 2.5rem 0 0 0;
+                }
 
                 &__ligne{
                     width: 40px;
