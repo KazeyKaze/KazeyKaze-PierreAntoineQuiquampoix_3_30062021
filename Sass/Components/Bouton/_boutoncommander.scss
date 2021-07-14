@@ -1,0 +1,23 @@
+.bouton{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 4rem 0;
+    
+        & button{
+            font-size: 1rem;
+            font-weight: bold;
+            color: $gris-clair;
+            padding: 1rem 3rem;
+            border-radius: 30px;
+            border-color: $rose $rose $magenta $rose;
+            border-style: solid;
+            background: linear-gradient($rose, $magenta 90%);
+            box-shadow: $ombre;
+
+                &:hover{
+                    box-shadow: $ombre-survol;
+                    background: lighten($color: $magenta, $amount: 10%);
+                    border-color: lighten($color: $magenta, $amount: 10%);
+                }
+        }
+}
