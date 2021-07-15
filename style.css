@@ -70,6 +70,12 @@ body a, body a:visited {
   background: whitesmoke;
 }
 
+@media only screen and (min-width: 700px) {
+  .body-menu {
+    background-color: white;
+  }
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,11 +204,25 @@ body a, body a:visited {
           justify-content: center;
 }
 
+@media only screen and (min-width: 700px) {
+  .fonctionnement {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .fonctionnement h1 {
   width: 100%;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .fonctionnement h1 {
+    text-align: center;
+  }
 }
 
 .fonctionnement h2 {
@@ -249,6 +269,13 @@ body a, body a:visited {
           box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
 }
 
+@media only screen and (min-width: 700px) {
+  .fonctionnement__etiquette {
+    width: 285px;
+    margin: 0 1vw 1.5rem 1vw;
+  }
+}
+
 .fonctionnement__etiquette:hover {
   background: #ebebf5;
   border-color: #ebebf5;
@@ -289,10 +316,17 @@ body a, body a:visited {
 }
 
 .restaurants h1 {
-  width: 87.5%;
+  width: 100%;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 0 1.5rem 1.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .restaurants h1 {
+    text-align: center;
+    margin: 0 0 1.5rem;
+  }
 }
 
 .restaurants__div {
@@ -307,6 +341,19 @@ body a, body a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .restaurants__div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .restaurants__div__nouveau {
@@ -341,9 +388,17 @@ body a, body a:visited {
   position: relative;
 }
 
+@media only screen and (min-width: 700px) {
+  .restaurants__div a {
+    min-width: 45%;
+    width: 45%;
+  }
+}
+
 .restaurants__div img {
   width: 100%;
-  height: 180px;
+  height: 25vw;
+  max-height: 225px;
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -390,6 +445,12 @@ footer {
   padding: 1.5rem 0 2rem 1.5rem;
   background: #3d3d3d;
   line-height: 1.5;
+}
+
+@media only screen and (min-width: 700px) {
+  footer {
+    text-align: center;
+  }
 }
 
 footer p {

@@ -3,6 +3,9 @@ footer{
     padding: 1.5rem 0 2rem 1.5rem;
     background: $gris-footer;
     line-height: 1.5;
+    @media only screen and (min-width: 700px) {
+        text-align: center;
+    }
 
         & p{
             font-family : "Shrikhand", cursif ;

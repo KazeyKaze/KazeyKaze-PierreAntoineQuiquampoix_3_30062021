@@ -4,6 +4,9 @@
     padding: 0 0 5rem 0;
     margin: 0 -1.5rem 0 -1.5rem;
     background: $gris-clair;
+    @media only screen and (min-width: 700px) {
+        background-color: white;  
+        }
     
         & button{
             font-size: 1rem;

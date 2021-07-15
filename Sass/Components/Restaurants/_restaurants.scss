@@ -6,10 +6,14 @@
     padding: 3rem 0 3rem 0;
         
         & h1{
-            width: 87.5%;
+            width: 100%;
             font-size: 1.5rem;
             font-weight: bold;
             margin: 0 0 1.5rem 1.5rem;
+            @media only screen and (min-width: 700px) {
+                text-align: center;
+                margin: 0 0 1.5rem;
+            }
         }
 
         &__div{
@@ -17,6 +21,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media only screen and (min-width: 700px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
 
                 &__nouveau{
                     color: $vert-fonce;
@@ -40,11 +49,16 @@
                     border-radius: 15px 15px 15px 15px;
                     box-shadow: $ombre;
                     position: relative;
+                    @media only screen and (min-width: 700px) {
+                        min-width: 45%;
+                        width: 45%;    
+                    }
                 }
                 
                 & img{
                  width: 100%;
-                 height: 180px;
+                 height: 25vw;
+                 max-height: 225px;
                  border-radius: 15px 15px 0 0;
                  object-fit: cover;
                 }

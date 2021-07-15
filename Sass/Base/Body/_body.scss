@@ -14,4 +14,7 @@ body{
 
 .body-menu{
     background: $gris-clair;
+    @media only screen and (min-width: 700px) {
+        background-color: white;
+        }
 }
