@@ -17,7 +17,6 @@
             border-color: $rose $rose $magenta $rose;
             border-style: solid;
             background: linear-gradient($rose, $magenta 90%);
-            box-shadow: $ombre;
 
                 &:hover{
                     box-shadow: $ombre-survol;
