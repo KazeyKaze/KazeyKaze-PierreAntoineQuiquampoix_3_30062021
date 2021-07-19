@@ -154,10 +154,35 @@ body a, body a:visited {
   }
 }
 
-.menu__titre i {
+.menu__titre .fas {
   position: absolute;
   right: 20px;
   top: 28px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.menu__titre .fas:hover {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  opacity: 1;
+  background-color: #9356DC;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu__titre .far {
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.menu__titre .far:hover {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 .menu__entrees {
