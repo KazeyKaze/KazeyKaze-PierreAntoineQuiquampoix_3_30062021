@@ -20,7 +20,7 @@
             
 
                 &:hover{
-                    box-shadow: $ombre-survol;transition: all 5s linear;
+                    box-shadow: $ombre-survol;
                     background: lighten($color: $magenta, $amount: 10%);
                     border-color: lighten($color: $magenta, $amount: 10%);
                 }
