@@ -76,16 +76,29 @@
                     border-bottom: 3px solid $vert;
                     padding: 0rem 0 0.5rem;
                 }
-        
+
                 &__choix{
+                    animation: slide-menu 2s;
+                }
+
+                &__choix-2{
+                    animation: slide-menu 2s .5s;
+                }
+
+                &__choix-3{
+                    animation: slide-menu 2s 1s;
+                }
+        
+                &__choix, &__choix-2, &__choix-3 {
                     text-transform: none;
                     background: white;
                     padding: 0.3rem 0.5rem 0.8rem;
                     border-radius: 15px;
                     margin: 1rem -0.3rem 0rem;
                     box-shadow: $ombre;
-                    /*transition: all 5s linear;
-                    transform: translateY(-10%);*/
+                    opacity: 0;
+                    animation-fill-mode: forwards;
+                    cursor: pointer;
                     
                         & h3{
                             line-height: 2;

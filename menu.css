@@ -52,6 +52,32 @@ table {
   border-spacing: 0;
 }
 
+@-webkit-keyframes slide-menu {
+  from {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-menu {
+  from {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 body {
   margin: 1.5rem 1.5rem 0 1.5rem;
   font-family: "Roboto", sans-serif;
@@ -202,6 +228,21 @@ body a, body a:visited {
 }
 
 .menu__entrees__choix {
+  -webkit-animation: slide-menu 2s;
+          animation: slide-menu 2s;
+}
+
+.menu__entrees__choix-2 {
+  -webkit-animation: slide-menu 2s .5s;
+          animation: slide-menu 2s .5s;
+}
+
+.menu__entrees__choix-3 {
+  -webkit-animation: slide-menu 2s 1s;
+          animation: slide-menu 2s 1s;
+}
+
+.menu__entrees__choix, .menu__entrees__choix-2, .menu__entrees__choix-3 {
   text-transform: none;
   background: white;
   padding: 0.3rem 0.5rem 0.8rem;
@@ -209,17 +250,19 @@ body a, body a:visited {
   margin: 1rem -0.3rem 0rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
-  /*transition: all 5s linear;
-                    transform: translateY(-10%);*/
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
-.menu__entrees__choix h3 {
+.menu__entrees__choix h3, .menu__entrees__choix-2 h3, .menu__entrees__choix-3 h3 {
   line-height: 2;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-.menu__entrees__choix__prix {
+.menu__entrees__choix__prix, .menu__entrees__choix-2__prix, .menu__entrees__choix-3__prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,11 +271,11 @@ body a, body a:visited {
           justify-content: space-between;
 }
 
-.menu__entrees__choix__prix h4 {
+.menu__entrees__choix__prix h4, .menu__entrees__choix-2__prix h4, .menu__entrees__choix-3__prix h4 {
   font-size: 0.9rem;
 }
 
-.menu__entrees__choix__prix p {
+.menu__entrees__choix__prix p, .menu__entrees__choix-2__prix p, .menu__entrees__choix-3__prix p {
   margin: 0 1rem 0 0;
   font-weight: bold;
   font-size: 0.9rem;
