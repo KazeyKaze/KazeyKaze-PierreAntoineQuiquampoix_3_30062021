@@ -461,21 +461,18 @@ body a, body a:visited {
 
 .restaurants__div__banniere .fas {
   position: absolute;
+  color: #9356DC;
   right: 20px;
   bottom: 28px;
   cursor: pointer;
   opacity: 0;
   font-size: 1.7rem;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .restaurants__div__banniere .fas:hover {
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
   opacity: 1;
-  background-color: #9356DC;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .restaurants__div__banniere .far {

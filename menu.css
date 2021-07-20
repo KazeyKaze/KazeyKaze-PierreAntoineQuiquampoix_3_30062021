@@ -184,18 +184,15 @@ body a, body a:visited {
   position: absolute;
   right: 20px;
   top: 28px;
+  color: #9356DC;
   cursor: pointer;
   opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .menu__titre .fas:hover {
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
   opacity: 1;
-  background-color: #9356DC;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .menu__titre .far {
@@ -314,6 +311,8 @@ body a, body a:visited {
 .bouton button:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 10px -5px;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 10px -5px;
+  -webkit-transition: all 5s linear;
+  transition: all 5s linear;
   background: #ae80e5;
   border-color: #ae80e5;
 }
