@@ -85,23 +85,27 @@
 
                         & .fas{
                             position: absolute;
-                            color: $magenta;
                             right: 20px;
-                            bottom: 28px;
+                            bottom: 25px;
                             cursor: pointer;
                             opacity: 0;
-                            font-size: 1.7rem;
                             transition: all 0.5s linear;
+                            background: linear-gradient($rose, $magenta 90%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            color: transparent;
+                            font-size: 1.7rem;
         
                                 &:hover{
-                                opacity: 1;
+                                    opacity: 1;
+                                    transform: scale(1.2);
                                 }
                         }
         
                         & .far{
                             position: absolute;
                             right: 20px;
-                            bottom: 28px;
+                            bottom: 25px;
                             cursor: pointer;
                             font-size: 1.7rem;
                         }

@@ -184,15 +184,23 @@ body a, body a:visited {
   position: absolute;
   right: 20px;
   top: 28px;
-  color: #9356DC;
   cursor: pointer;
   opacity: 0;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(90%, #9356DC));
+  background: linear-gradient(#FF79DA, #9356DC 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .menu__titre .fas:hover {
   opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  right: 20px;
+  top: 28px;
 }
 
 .menu__titre .far {
