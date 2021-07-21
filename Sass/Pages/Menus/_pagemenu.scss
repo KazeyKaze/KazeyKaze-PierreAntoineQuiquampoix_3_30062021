@@ -127,38 +127,38 @@
                                 }
                         }
 
+                        &__etiquette{
+                            width: 100%;
+                            transition: all .3s linear;
+                            transform: translateX(0%);
+
+                                &:hover{
+                                    width: calc(100% - 80px);
+
+                                        & i{
+                                            transition: all 0.3s linear;
+                                            transform: rotate(360deg); 
+                                        }
+                                }
+                        }
+
                         &__valide{
                             position: absolute;
                             background-color: $vert;
                             width: 80px;
                             height: 68px;
-                            top: 0px;
-                            right: 0px;
+                            top: -5px;
+                            right: -8px;
                             transform: translate(80px);
-                            transition: all 0.3s linear;
-
-                                &:hover{
-                                    transform: translateX(0px);
-                                }
 
                             & i{
                             position: absolute;
-                            left: 31px;
-                            top: 26px;
+                            left: 30px;
+                            top: 25px;
                             color: white;
-                            transform: rotate(180deg);
+                            font-size: 1.3rem;
                             }
                         }
                 }
         }
 }
-
-.etiquette{
-    width: 100%;
-    transition: width 0.3s linear;
-
-        &:hover{
-            width: 80%;
-        }
-}
-

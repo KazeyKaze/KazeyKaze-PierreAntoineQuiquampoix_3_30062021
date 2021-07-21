@@ -287,41 +287,42 @@ body a, body a:visited {
   font-size: 0.9rem;
 }
 
+.menu__entrees__choix__etiquette, .menu__entrees__choix-2__etiquette, .menu__entrees__choix-3__etiquette {
+  width: 100%;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.menu__entrees__choix__etiquette:hover, .menu__entrees__choix-2__etiquette:hover, .menu__entrees__choix-3__etiquette:hover {
+  width: calc(100% - 80px);
+}
+
+.menu__entrees__choix__etiquette:hover i, .menu__entrees__choix-2__etiquette:hover i, .menu__entrees__choix-3__etiquette:hover i {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .menu__entrees__choix__valide, .menu__entrees__choix-2__valide, .menu__entrees__choix-3__valide {
   position: absolute;
   background-color: #99E2D0;
   width: 80px;
   height: 68px;
-  top: 0px;
-  right: 0px;
+  top: -5px;
+  right: -8px;
   -webkit-transform: translate(80px);
           transform: translate(80px);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.menu__entrees__choix__valide:hover, .menu__entrees__choix-2__valide:hover, .menu__entrees__choix-3__valide:hover {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
 }
 
 .menu__entrees__choix__valide i, .menu__entrees__choix-2__valide i, .menu__entrees__choix-3__valide i {
   position: absolute;
-  left: 31px;
-  top: 26px;
+  left: 30px;
+  top: 25px;
   color: white;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.etiquette {
-  width: 100%;
-  -webkit-transition: width 0.3s linear;
-  transition: width 0.3s linear;
-}
-
-.etiquette:hover {
-  width: 80%;
+  font-size: 1.3rem;
 }
 
 .bouton {
