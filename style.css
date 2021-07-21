@@ -465,8 +465,8 @@ body a, body a:visited {
   bottom: 25px;
   cursor: pointer;
   opacity: 0;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: all 1s cubic-bezier(0, 0.85, 0.99, 2.68);
+  transition: all 1s cubic-bezier(0, 0.85, 0.99, 2.68);
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(90%, #9356DC));
   background: linear-gradient(#FF79DA, #9356DC 90%);
   background-clip: text;
