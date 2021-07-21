@@ -1,0 +1,26 @@
+.spinner{
+    display: inline-flex;
+    position: fixed;
+    margin: 0 -1.5rem 0;
+    z-index: 9999;
+    background-color: rgb(66, 59, 59);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    animation: spinner-opacite 2s linear forwards;
+    
+
+    &__div{
+        position: absolute;
+        border: 10px inset;
+        margin-top: 15%;
+        padding: 5.5rem 2.26rem 5.5rem;
+        border-top-color: $vert;
+        border-bottom-color: $magenta;
+        border-left-color: $rose;
+        border-right-color: orange;
+        border-radius: 50%;
+        animation: spinner 2s linear infinite;
+        font-family: shrikhand, cursif;
+    }
+}
