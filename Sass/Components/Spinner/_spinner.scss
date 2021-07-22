@@ -13,7 +13,7 @@
     &__div{
         position: absolute;
         border: 10px inset;
-        margin-top: 15%;
+        margin-top: 210px;
         padding: 5.5rem 2.26rem 5.5rem;
         border-top-color: $vert;
         border-bottom-color: $magenta;
@@ -22,5 +22,9 @@
         border-radius: 50%;
         animation: spinner 2s linear infinite;
         font-family: shrikhand, cursif;
+        @media only screen and (min-width: 420px) {
+            margin-top: 300px;
+        }
+        
     }
 }

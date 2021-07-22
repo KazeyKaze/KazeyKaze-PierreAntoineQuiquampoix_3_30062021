@@ -103,6 +103,7 @@ table {
 @-webkit-keyframes spinner-opacite {
   0% {
     opacity: 1;
+    cursor: wait;
   }
   80% {
     opacity: 1;
@@ -110,12 +111,14 @@ table {
   100% {
     opacity: 0;
     visibility: hidden;
+    cursor: wait;
   }
 }
 
 @keyframes spinner-opacite {
   0% {
     opacity: 1;
+    cursor: wait;
   }
   80% {
     opacity: 1;
@@ -123,6 +126,7 @@ table {
   100% {
     opacity: 0;
     visibility: hidden;
+    cursor: wait;
   }
 }
 
@@ -170,7 +174,7 @@ body a, body a:visited {
 .spinner__div {
   position: absolute;
   border: 10px inset;
-  margin-top: 15%;
+  margin-top: 210px;
   padding: 5.5rem 2.26rem 5.5rem;
   border-top-color: #99E2D0;
   border-bottom-color: #9356DC;
@@ -180,6 +184,12 @@ body a, body a:visited {
   -webkit-animation: spinner 2s linear infinite;
           animation: spinner 2s linear infinite;
   font-family: shrikhand, cursif;
+}
+
+@media only screen and (min-width: 420px) {
+  .spinner__div {
+    margin-top: 300px;
+  }
 }
 
 .logo {
@@ -387,6 +397,7 @@ body a, body a:visited {
   border-color: #ebebf5;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 10px -5px;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 10px -5px;
+  cursor: pointer;
 }
 
 .fonctionnement__etiquette:hover i {
@@ -589,8 +600,8 @@ footer p {
 }
 
 footer a:hover {
-  -webkit-text-decoration: underline white;
-          text-decoration: underline white;
+  -webkit-text-decoration: underline #FF79DA;
+          text-decoration: underline #FF79DA;
 }
 
 footer nav {
@@ -599,6 +610,11 @@ footer nav {
 
 footer h3 {
   color: white;
+  display: inline;
+}
+
+footer h3:hover {
+  color: #FF79DA;
 }
 
 footer h3 i {

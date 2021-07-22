@@ -103,6 +103,7 @@ table {
 @-webkit-keyframes spinner-opacite {
   0% {
     opacity: 1;
+    cursor: wait;
   }
   80% {
     opacity: 1;
@@ -110,12 +111,14 @@ table {
   100% {
     opacity: 0;
     visibility: hidden;
+    cursor: wait;
   }
 }
 
 @keyframes spinner-opacite {
   0% {
     opacity: 1;
+    cursor: wait;
   }
   80% {
     opacity: 1;
@@ -123,6 +126,7 @@ table {
   100% {
     opacity: 0;
     visibility: hidden;
+    cursor: wait;
   }
 }
 
@@ -228,6 +232,10 @@ body a, body a:visited {
   }
 }
 
+.menu__titre h1 {
+  padding-right: 2rem;
+}
+
 .menu__titre .fas {
   position: absolute;
   right: 20px;
@@ -243,6 +251,12 @@ body a, body a:visited {
   color: transparent;
 }
 
+@media only screen and (min-width: 700px) {
+  .menu__titre .fas {
+    right: 26vw;
+  }
+}
+
 .menu__titre .fas:hover {
   opacity: 1;
   -webkit-transform: scale(1.2);
@@ -251,11 +265,23 @@ body a, body a:visited {
   top: 28px;
 }
 
+@media only screen and (min-width: 700px) {
+  .menu__titre .fas:hover {
+    right: 26vw;
+  }
+}
+
 .menu__titre .far {
   position: absolute;
   right: 20px;
   top: 28px;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+  .menu__titre .far {
+    right: 26vw;
+  }
 }
 
 .menu__entrees {
@@ -438,8 +464,8 @@ footer p {
 }
 
 footer a:hover {
-  -webkit-text-decoration: underline white;
-          text-decoration: underline white;
+  -webkit-text-decoration: underline #FF79DA;
+          text-decoration: underline #FF79DA;
 }
 
 footer nav {
@@ -448,6 +474,11 @@ footer nav {
 
 footer h3 {
   color: white;
+  display: inline;
+}
+
+footer h3:hover {
+  color: #FF79DA;
 }
 
 footer h3 i {

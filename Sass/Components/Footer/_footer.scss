@@ -14,7 +14,7 @@ footer{
         }
 
         & a:hover{
-            text-decoration: underline white;
+            text-decoration: underline $rose;
         }
 
         & nav{
@@ -23,6 +23,11 @@ footer{
 
         & h3{
             color: white;
+            display: inline;
+
+            &:hover{
+                color: $rose;
+            }
 
             & i{
                 margin-right: 1rem;
