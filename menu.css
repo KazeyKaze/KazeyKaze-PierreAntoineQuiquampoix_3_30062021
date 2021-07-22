@@ -246,7 +246,6 @@ body a, body a:visited {
   transition: all 1s cubic-bezier(0, 0.85, 0.99, 2.68);
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(90%, #9356DC));
   background: linear-gradient(#FF79DA, #9356DC 90%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -446,7 +445,7 @@ body a, body a:visited {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 10px -5px;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 10px -5px;
   background: #ae80e5;
-  border-color: #ae80e5;
+  border-color: #e37de3;
 }
 
 footer {

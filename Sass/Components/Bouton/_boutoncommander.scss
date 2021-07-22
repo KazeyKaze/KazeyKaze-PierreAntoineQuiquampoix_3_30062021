@@ -22,7 +22,7 @@
                 &:hover{
                     box-shadow: $ombre-survol;
                     background: lighten($color: $magenta, $amount: 10%);
-                    border-color: lighten($color: $magenta, $amount: 10%);
+                    border-color: lighten($color: rgb(218, 83, 218), $amount: 10%);
                 }
         }
 }
