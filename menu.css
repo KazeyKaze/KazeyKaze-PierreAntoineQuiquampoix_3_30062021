@@ -324,7 +324,7 @@ body a, body a:visited {
 .menu__entrees__choix, .menu__entrees__choix-2, .menu__entrees__choix-3 {
   text-transform: none;
   background: white;
-  padding: 0.3rem 0.5rem 0.8rem;
+  padding: 0.3rem 0 0.8rem 0.3rem;
   border-radius: 15px;
   margin: 1rem -0.3rem 0rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 9px 10px -8px;
@@ -345,6 +345,7 @@ body a, body a:visited {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-top: -0.3rem;
 }
 
 .menu__entrees__choix__prix, .menu__entrees__choix-2__prix, .menu__entrees__choix-3__prix {
@@ -354,6 +355,7 @@ body a, body a:visited {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: -0.9rem;
 }
 
 .menu__entrees__choix__prix h4, .menu__entrees__choix-2__prix h4, .menu__entrees__choix-3__prix h4 {
@@ -361,6 +363,7 @@ body a, body a:visited {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-bottom: 0.8rem;
 }
 
 .menu__entrees__choix__prix p, .menu__entrees__choix-2__prix p, .menu__entrees__choix-3__prix p {
@@ -371,10 +374,11 @@ body a, body a:visited {
 
 .menu__entrees__choix__etiquette, .menu__entrees__choix-2__etiquette, .menu__entrees__choix-3__etiquette {
   width: 100%;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all .3s linear .15s;
+  transition: all .3s linear .15s;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+  padding: 0.25rem 0 0.25rem 0.5rem;
 }
 
 .menu__entrees__choix__etiquette:hover, .menu__entrees__choix-2__etiquette:hover, .menu__entrees__choix-3__etiquette:hover {
@@ -382,8 +386,8 @@ body a, body a:visited {
 }
 
 .menu__entrees__choix__etiquette:hover i, .menu__entrees__choix-2__etiquette:hover i, .menu__entrees__choix-3__etiquette:hover i {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear .15s;
+  transition: all 0.3s linear .15s;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -391,10 +395,10 @@ body a, body a:visited {
 .menu__entrees__choix__valide, .menu__entrees__choix-2__valide, .menu__entrees__choix-3__valide {
   position: absolute;
   background-color: #99E2D0;
-  width: 80px;
-  height: 68px;
+  width: 88px;
+  height: 72px;
   top: -5px;
-  right: -8px;
+  right: 0px;
   -webkit-transform: translate(80px);
           transform: translate(80px);
 }
@@ -405,6 +409,7 @@ body a, body a:visited {
   top: 25px;
   color: white;
   font-size: 1.3rem;
+  pointer-events: none;
 }
 
 .bouton {
